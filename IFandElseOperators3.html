@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ASSINGMENT 3</title>
+</head>
+<body>
+    <H1>IF and Else Operators</H1>
+
+</body>
+<script>
+   //Q1
+   console.log("Q1")
+let obtainedMarks = 72
+let passingMarks = 40
+let attendance = 85
+let requiredAttendance = 75
+
+if(obtainedMarks>=passingMarks){
+    console.log("you are passed")
+}else{
+    console.log("failed")
+}if(attendance>=requiredAttendance){
+    console.log("attendance approved")
+}else{
+    console.log("attendance not approved")
+}if(obtainedMarks>=passingMarks&&attendance>=requiredAttendance){
+    console.log("You can sit in exam")
+}else{
+     console.log("so sorry")
+}if(obtainedMarks>=70 ||attendance>=90){
+     console.log("You got the scholarship")}
+   let comapare=  attendance>=requiredAttendance
+ console.log(comapare)
+ let strictlyEqual=obtainedMarks===passingMarks
+ console.log(strictlyEqual)
+//Q2
+console.log("Q2")
+let cartTotal = 5500
+let minimumOrder = 3000
+let walletBalance = 4000
+let premiumMember = true
+//1
+ console.log("1.",minimumOrder<cartTotal)
+ //2
+ if(walletBalance>=cartTotal){
+     console.log("2."+"have required balance")
+ }else{
+     console.log("less balance")
+ }
+ //3
+ console.log(minimumOrder<cartTotal && walletBalance>cartTotal)
+//4
+console.log(premiumMember==true||cartTotal>5000)
+//5
+console.log(walletBalance<cartTotal)
+//6
+console.log(premiumMember===true)
+//Q3
+console.log("Q3")
+let playerLevel = 18
+let requiredLevel = 15
+let coins = 1800
+let requiredCoins = 2000
+let premiumPass = true
+ console.log(playerLevel>requiredLevel)
+ console.log(coins>requiredCoins)
+ console.log("special mission",playerLevel>requiredAttendance&&coins>requiredCoins)
+ console.log("VIP content",premiumPass==true||playerLevel>20)
+console.log(requiredCoins<coins)
+console.log(premiumPass!=false)
+//Q4
+console.log("Q4")
+let accountBalance = 50000
+let withdrawalAmount = 15000
+let pinVerified = true
+let dailyLimit = 20000
+console.log(withdrawalAmount<dailyLimit)
+console.log(accountBalance>withdrawalAmount)
+console.log(pinVerified==true&&accountBalance>withdrawalAmount)
+console.log(pinVerified==true||accountBalance>100000 )
+console.log(withdrawalAmount<dailyLimit)
+console.log(pinVerified===true)
+//Q5
+console.log("Q5")
+let age = 19
+let minimumAge = 18
+let registeredParticipants = 480
+let maximumParticipants = 500
+let vipInvite = false
+console.log(minimumAge<=age)
+console.log(maximumParticipants>=registeredParticipants)
+console.log(minimumAge<=age&&maximumParticipants>=registeredParticipants)
+console.log(vipInvite==true||age>25)
+console.log(registeredParticipants<maximumParticipants)
+console.log(vipInvite!==true)
+//Q6
+console.log("Q6")
+let experience = 3
+let requiredExperience = 2
+let degreeCompleted = true
+let referralAvailable = false
+console.log(requiredExperience<experience)
+console.log(degreeCompleted==true)
+console.log(requiredExperience<experience&&degreeCompleted==true)
+console.log("priority consideration",degreeCompleted==true||referralAvailable==true)
+console.log(experience<requiredExperience)
+console.log(referralAvailable==true)
+//Q7
+console.log("Q7")
+let testScore = 82
+let requiredScore = 75
+let documentsSubmitted = true
+let sportsQuota = false
+console.log(requiredScore<testScore)
+console.log(documentsSubmitted==true)
+console.log("admission granted",requiredScore<testScore&&documentsSubmitted)
+console.log(sportsQuota==true||testScore>90)
+console.log(testScore<requiredScore)
+console.log(sportsQuota===false)
+console.log("")
+</script>
+</html>
+ 
