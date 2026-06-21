@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSINGMENT 4</title>
+</head>
+<body>
+    <H1>ASSINGMENT 4 FUNTIONS</H1>
+    <h2 id="h250">50</h2>
+    <button id="bonusM">Add Bonus Marks</button>
+    <button id="deductM">Deduct Marks</button>
+    <br>
+<h2>AGE</h2>
+<h2 id="age">18</h2>
+<button id="birth">Birthday</button>
+<button id="back">Go Back One Year</button>
+<br>
+<h2 id="state">Bulb is OFF</h2>
+ <button id="onBTN">Turn ON</button>
+ <button id="offBTN">Turn OFF</button>
+</body>
+<script>
+    let h2Marks=document.querySelector("#h250")
+    let bonusMarks=document.querySelector("#bonusM")
+    let deductMarks=document.querySelector("#deductM")
+    console.log(h2Marks)
+    console.log(bonusMarks)
+    console.log(deductMarks)
+
+let num=5
+    let marks=h2Marks.innerHTML
+    let bonus= ()=> {
+        marks=+marks+5
+        h2Marks.innerHTML=marks
+    }
+    let deduct = ()=> {
+        marks=marks-5
+       h2Marks.innerHTML=marks
+    }
+    
+    bonusMarks.addEventListener("click",bonus)
+    deductMarks.addEventListener("click",deduct)
+//-----------------------------------------------------------
+    let h2age=document.querySelector("#age")
+    let birthday=document.querySelector("#birth")
+    let oneYear=document.querySelector("#back")
+    console.log(h2age)
+    console.log(birthday)
+    console.log(oneYear)
+    let finalage=h2age.innerHTML
+    let birth= ()=> {
+        finalage=+finalage+1
+        h2age.innerHTML=finalage
+    }
+    let back = ()=> {
+        finalage=finalage-1
+       h2age.innerHTML=finalage
+    }
+    
+    birthday.addEventListener("click",birth)
+    oneYear.addEventListener("click",back)
+ //------------------------------------------------------   
+    let bulbState=document.querySelector("#state")
+    let onBTN=document.querySelector("#onBTN")
+    let offBTN=document.querySelector("#offBTN")
+    console.log(bulbState)
+    console.log(onBTN)
+    console.log(offBTN)
+    let onFuntion= ()=> {
+   
+        bulbState.textContent="Bulb is ON"
+    }
+    let offFuntion = () => {
+       bulbState.textContent="Bulb is OFF"
+    }
+    onBTN.addEventListener("click",onFuntion)
+    offBTN.addEventListener("click",offFuntion)
+</script>
+</html>
